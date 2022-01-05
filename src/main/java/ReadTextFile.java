@@ -12,13 +12,13 @@ import java.util.*;
 
 public class ReadTextFile {
     public static void main(String[] args) throws IOException, ParseException {
-       // Date date = new Date();
+        // Date date = new Date();
 
         LocalDate date = LocalDate.now().minusDays(1);
-         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String strDate = date.format(formatter);
         FileUtils.forceMkdir(new File("C://Users//"+strDate));
-         System.out.println("Date Format with MM/dd/yyyy : "+strDate);
+        System.out.println("Date Format with MM/dd/yyyy : "+strDate);
         Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
         System.out.print("Enter KLOg file");
         String klog = sc.next();
@@ -46,7 +46,7 @@ public class ReadTextFile {
         if (!diffKlog.isEmpty()) {
             for (KlogObj obj : diffKlog) {
                 if (!obj.getPayload().contains("LCws")) {
-                        FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//"));
+                    FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//"));
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
 
@@ -54,7 +54,7 @@ public class ReadTextFile {
 
 
                 } else {
-                        FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
+                    FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
 
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
@@ -66,13 +66,13 @@ public class ReadTextFile {
         if (!difftlog.isEmpty()) {
             for (KlogObj obj : difftlog) {
                 if (!obj.getPayload().contains("LCws")) {
-                        FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//"));
+                    FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//"));
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
 
                     createBinFile(obj, file);
                 } else {
-                        FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
+                    FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
 
@@ -84,14 +84,14 @@ public class ReadTextFile {
         if (!commonObj.isEmpty()) {
             for (KlogObj obj : commonObj) {
                 if (!obj.getPayload().contains("LCws")) {
-                        FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//"));
+                    FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//"));
 
-                     File file = new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
+                    File file = new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
 
 //Create the file
                     createBinFile(obj, file);
                 } else {
-                        FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
+                    FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
 
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
@@ -206,10 +206,16 @@ public class ReadTextFile {
                 rows.createCell(5)
                         .setCellValue("Invalid");
                 rows.getCell(5).setCellStyle(cellStyle);
+                if(!obj.getComment().contains("LCws")) {
+                    rows.createCell(6)
+                            .setCellValue(obj.getComment() + " But present in both files");
+                    rows.getCell(6).setCellStyle(cellStyle);
 
-                rows.createCell(6)
-                        .setCellValue(obj.getComment());
-                rows.getCell(6).setCellStyle(cellStyle);
+                }else{
+                    rows.createCell(6)
+                            .setCellValue(obj.getComment());
+                    rows.getCell(6).setCellStyle(cellStyle);
+                }
             }
         }
         if (!diffKlog.isEmpty()) {
@@ -336,7 +342,7 @@ public class ReadTextFile {
                             klogObj.setStatus("Invalid");
                         } else {
                             klogObj.setValid(true);
-                            klogObj.setComment("Looks like regular payload.But present in both files");
+                            klogObj.setComment("Looks like regular payload.");
                             klogObj.setStatus("Invalid");
                         }
                         String payld = str[1].replace("</Payload", "");
