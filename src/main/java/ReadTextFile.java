@@ -5,7 +5,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -331,8 +330,16 @@ public class ReadTextFile {
                         klogObj.setStore(spl[0].replace("\"", ""));
                     }
                     if (a.contains("CorrelationId")) {
-                        String[] str = a.split("=");
-                        klogObj.setCorelationId(str[1].replace("\"", ""));
+                        if(a.contains(".dat")){
+                            String[] str = a.split("=");
+                            String replaced = str[1].replace("\"", "");
+                            klogObj.setCorelationId(replaced.replace("./",""));
+
+
+                        }else {
+                            String[] str = a.split("=");
+                            klogObj.setCorelationId(str[1].replace("\"", ""));
+                        }
                     }
                     if (a.endsWith("</Payload></")) {
                         String[] str = a.split(">");

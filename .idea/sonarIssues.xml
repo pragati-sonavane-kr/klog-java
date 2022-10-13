@@ -3,7 +3,717 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/JavaTest/src/main/java/DEmo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/Patient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/PatientRecord.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/PatientWrongEntryException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/Patients.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/java/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/java/PatientRecord.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/java/PatientWrongEntryException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/java/Patients.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/main/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/main/java/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/main/java/MainClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/main/java/Patient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/main/java/PatientRecord.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/demo3/J2EE_assignment/src/main/java/PatientWrongEntryException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/klog-cli.iml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/KlogCliApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/AddParentTagIntoXml.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/CreateBinFileService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/ErrorAnalyserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/ExcelStyleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/FileReaderService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/FileRederService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/FileSearchService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/GetFileNameService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/GetXMLDocumentElement.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/MakeDirFoBinService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/WriteExcelHeaderService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/WriteToExcelService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/java/com/example/klogcli/service/WriteToObjectService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-cli/src/test/java/com/example/klogcli/KlogCliApplicationTests.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ReadTextFile.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/KlogCliApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/modal/ErrorObj.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/modal/HeaderEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/DateUtilsCommon.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/ErrorAnalyserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/MakeDirFoBinService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/WriteToObjectService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/excel/ExcelStyleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/excel/WriteExcelHeaderService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/excel/WriteToExcelService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/file/FileReaderService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/file/FileSearchService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/file/GetFileNameService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/klog-spring-boot-cli/klog-sprin-boot-cli/src/main/java/com/example/klogcli/service/file/WriteToObjectService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sharedFolderAccess/src/main/java/SharedFolder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/shre-folder/src/SharedFolder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/shre-folder/src/java/SharedFolder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/ChangeLogController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/ComponentController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/ConfigController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/ContactInfoController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/DashboardController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/DefaultController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/FileInfoController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/FileSendController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/JobDisplayController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/NotificationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/PagerLogController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/ReportController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/SearchController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/StreamController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/controller/UserController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/Enum/CommonEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/Enum/DateUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/Enum/DateUtilsCommon.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/configuration/SweeperAgent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/configuration/SweeperConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/dashboard/AbendDeadlinesDashboard.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/dashboard/DeploymentsDevDashboard.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/dashboard/DeploymentsSuppDashboard.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/dashboard/JobsSupportedDashboard.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/dashboard/OutagesDashboard.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/report/WeeklyErrorExport.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/model/user/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/ReportDATARepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/SweeperConfigDetailsRepo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/UserDAORepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/dao/ChangeLogDAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/dao/PagerLogDAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/dao/SweeperConfigAgentDAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/dao/SweeperConfigDAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/repo/dao/SweeperConfigDetailDAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/rest/ao/ChangeLogAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/rest/ao/ChangeLogObjAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/rest/ao/UserAO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/rest/controller/ChangeLogRestController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/rest/model/change_log/ChangeLogItems.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/rest/service/change_log/ChangeLogRestServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/authentication/AuthenticationServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/changelog/ChangeLogServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/component/ComponentServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/configuration/SweeperConfigService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/configuration/SweeperConfigServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/contactinfo/ContactInfoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/dashboard/DashboardService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/dashboard/DashboardServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/errorlist/ErrorListServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/errorlog/ErrorLogServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/file/FileArrivalServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/fileinfo/FileInfoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/genericsupport/GenericSupportServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/jobinformation/JobInformationServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/jobinformation/JobStatusService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/link/QuickLinksServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/outages/OutageServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/pagerlog/PagerLogServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/reports/ReportServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/streaminformation/StreamInformationServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/service/user/UserServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/java/com/kroger/sisd/disc/utils/DateUtilsCommon.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/static/css/app.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/static/js/dashboard.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/static/js/datatable.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/static/js/functions.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/common/navbar/navbar.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/config/addSweeperConfig.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/config/sweeper.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/config/sweepr.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/dashboard/dashboard.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/reports/mainReports.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/rest/file-arrival/change-log/changeLog.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/main/resources/templates/search/search.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/rest/change_log/ChangeLogRestControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/rest/change_log/ChangeLogRestServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/changelog/ChangeServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/dashboard/DashboardServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/genericsupport/GenericSupportServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/jobdetails/JobInformationServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/outage/OutageServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/pagerlog/PagerLogServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/reports/ReportServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/stream/StreamInfoServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/sis_project/sis-disc/src/test/java/com/kroger/sisd/disc/service/user/UserServiceImplTest.java">
           <value>
             <set />
           </value>
