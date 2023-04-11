@@ -12,11 +12,16 @@ import java.util.*;
 public class ReadTextFile {
     public static void main(String[] args) throws IOException, ParseException {
         // Date date = new Date();
-
+        int count = 1;
         LocalDate date = LocalDate.now().minusDays(1);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String strDate = date.format(formatter);
-        FileUtils.forceMkdir(new File("C://Users//"+strDate));
+        File directory = new File("C://Users//"+strDate);
+        if(directory.exists()){
+            throw new IOException("Bin file creation failed, File already exists.");
+
+        }
+        FileUtils.forceMkdir(directory);
         System.out.println("Date Format with MM/dd/yyyy : "+strDate);
         Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
         System.out.print("Enter KLOg file");
@@ -44,37 +49,48 @@ public class ReadTextFile {
         writeToExcel(commonObj, difftlog, diffKlog);
         if (!diffKlog.isEmpty()) {
             for (KlogObj obj : diffKlog) {
+                setCorrelationId(obj);
                 if (!obj.getPayload().contains("LCws")) {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//"));
-
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
-
+                    if(file.exists()){
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
+                        count++;
+                    }
                     createBinFile(obj, file);
 
 
                 } else {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
-
-
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
-
+                    if(file.exists()){
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");                        count++;
+                        count++;
+                    }
                     createBinFile(obj, file);
                 }
             }
         }
         if (!difftlog.isEmpty()) {
             for (KlogObj obj : difftlog) {
+                setCorrelationId(obj);
                 if (!obj.getPayload().contains("LCws")) {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//"));
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
-
+                    if(file.exists()){
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_diff_paylod_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
+                        count++;
+                    }
                     createBinFile(obj, file);
                 } else {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
-
+                    if(file.exists()){
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
+                        count++;
+                    }
                     createBinFile(obj, file);
                 }
             }
@@ -82,19 +98,25 @@ public class ReadTextFile {
         }
         if (!commonObj.isEmpty()) {
             for (KlogObj obj : commonObj) {
+                setCorrelationId(obj);
                 if (!obj.getPayload().contains("LCws")) {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//"));
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
-
+                    if(file.exists()){
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_common_regular_payload_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
+                        count++;
+                    }
 //Create the file
                     createBinFile(obj, file);
                 } else {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
 
-
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
-
+                    if(file.exists()){
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
+                        count++;
+                    }
                     createBinFile(obj, file);
                 }
 
@@ -375,5 +397,11 @@ public class ReadTextFile {
         }
         return objList;
     }
+    private static void setCorrelationId(KlogObj obj) {
+        String str = obj.getCorelationId();
+        String replaced = str.replaceAll("[<,>,?,\",:,*,|,/,\\\\]","");
+        replaced.replaceFirst("(?:[.])+", "");
+        obj.setCorelationId(replaced);
 
+    }
 }
