@@ -12,14 +12,12 @@ import java.util.*;
 public class ReadTextFile {
     public static void main(String[] args) throws IOException, ParseException {
         // Date date = new Date();
-        int count = 1;
         LocalDate date = LocalDate.now().minusDays(1);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String strDate = date.format(formatter);
         File directory = new File("C://Users//"+strDate);
         if(directory.exists()){
             throw new IOException("Bin file creation failed, File already exists.");
-
         }
         FileUtils.forceMkdir(directory);
         System.out.println("Date Format with MM/dd/yyyy : "+strDate);
@@ -48,6 +46,8 @@ public class ReadTextFile {
                 .forEach(commonObj::add);
         writeToExcel(commonObj, difftlog, diffKlog);
         if (!diffKlog.isEmpty()) {
+            int count = 1;
+            int LcwsCount = 1;
             for (KlogObj obj : diffKlog) {
                 setCorrelationId(obj);
                 if (!obj.getPayload().contains("LCws")) {
@@ -64,14 +64,16 @@ public class ReadTextFile {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
                     if(file.exists()){
-                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");                        count++;
-                        count++;
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + LcwsCount + ".bin");                       LcwsCount++;
+                        LcwsCount++;
                     }
                     createBinFile(obj, file);
                 }
             }
         }
         if (!difftlog.isEmpty()) {
+            int count = 1;
+            int LcwsCount = 1;
             for (KlogObj obj : difftlog) {
                 setCorrelationId(obj);
                 if (!obj.getPayload().contains("LCws")) {
@@ -88,8 +90,8 @@ public class ReadTextFile {
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
                     if(file.exists()){
-                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
-                        count++;
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + LcwsCount + ".bin");
+                        LcwsCount++;
                     }
                     createBinFile(obj, file);
                 }
@@ -97,6 +99,8 @@ public class ReadTextFile {
 
         }
         if (!commonObj.isEmpty()) {
+            int count = 1;
+            int LcwsCount = 1;
             for (KlogObj obj : commonObj) {
                 setCorrelationId(obj);
                 if (!obj.getPayload().contains("LCws")) {
@@ -114,8 +118,8 @@ public class ReadTextFile {
 
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
                     if(file.exists()){
-                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + count + ".bin");
-                        count++;
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + LcwsCount + ".bin");
+                        LcwsCount++;
                     }
                     createBinFile(obj, file);
                 }
@@ -400,7 +404,9 @@ public class ReadTextFile {
     private static void setCorrelationId(KlogObj obj) {
         String str = obj.getCorelationId();
         String replaced = str.replaceAll("[<,>,?,\",:,*,|,/,\\\\]","");
-        replaced.replaceFirst("(?:[.])+", "");
+        if(replaced.startsWith(".")) {
+            replaced = replaced.replaceFirst("(?:[.])+", "");
+        }
         obj.setCorelationId(replaced);
 
     }
