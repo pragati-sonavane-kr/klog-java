@@ -64,7 +64,7 @@ public class ReadTextFile {
                     FileUtils.forceMkdir(new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//"));
                     File file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + ".bin");
                     if(file.exists()){
-                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + LcwsCount + ".bin");                       LcwsCount++;
+                        file = new File("C://Users//"+strDate+"//"+strDate+"_lcws_error_bin//" + "klog_"+strDate+"_"+obj.getCorelationId()+"_"+obj.getDivision()+"_"+obj.getStore() + "_" + LcwsCount + ".bin");
                         LcwsCount++;
                     }
                     createBinFile(obj, file);
